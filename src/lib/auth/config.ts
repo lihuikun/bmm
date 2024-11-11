@@ -24,7 +24,7 @@ export const authConfig = {
   session: { strategy: 'jwt' },
   pages: { signIn: PageRoutes.LOGIN },
   theme: { logo: Assets.LOGO_SVG },
-  // debug: true,
+  debug: true,
   callbacks: {
     // authorized(params) {
     //   return NextResponse.json({ msg: '暂无权限' }, { status: 403 })
