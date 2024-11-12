@@ -24,6 +24,7 @@ export const authConfig = {
   session: { strategy: 'jwt' },
   pages: { signIn: PageRoutes.LOGIN },
   theme: { logo: Assets.LOGO_SVG },
+  secret: process.env.AUTH_SECRET,
   // debug: true,
   callbacks: {
     // authorized(params) {
