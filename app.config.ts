@@ -94,5 +94,5 @@ export const Assets = {
 }
 
 export const ExternalLinks = {
-  REPO: 'https://github.com/y80/bmm',
+  REPO: 'https://github.com/lihuikun/bmm',
 } as const
