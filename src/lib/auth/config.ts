@@ -17,8 +17,6 @@ if (!process.env.VERCEL) {
   githubProvider.token = process.env.FETCH_GITHUB_TOKEN_PROXY || githubProvider.token
 }
 
-console.log(process.env)
-
 // 这里没有配置 adapter，是为了兼容边缘环境
 // https://authjs.dev/guides/edge-compatibility
 export const authConfig = {
@@ -26,7 +24,6 @@ export const authConfig = {
   session: { strategy: 'jwt' },
   pages: { signIn: PageRoutes.LOGIN },
   theme: { logo: Assets.LOGO_SVG },
-  secret: process.env.AUTH_SECRET,
   // debug: true,
   callbacks: {
     // authorized(params) {
