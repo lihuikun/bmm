@@ -1,5 +1,4 @@
 {
-  "regions": ["sfo1"],
   "headers": [
     {
       "source": "/api/(.*)",
